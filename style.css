@@ -1,0 +1,112 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #3f7457;
+  font: 500 20px Inter;
+}
+
+#My Journey {
+  background-color: rgb(139, 185, 175);
+  font: 500 20px Inter;
+}
+
+#about {
+  background-color: rgb(104, 138, 131);
+  font: 500 20px Inter;
+}
+section {
+  padding-top: 5rem;
+}
+
+/*  My skills */
+.skills-section,
+footer {
+  background-color: #cebcbc;
+}
+
+.skills-section .progress-bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  font: 500 20px Inter;
+}
+
+.skills-section .progress-bar .progress {
+  background-color: var(--secondary-color);
+}
+
+/* contact css */
+.contact {
+  min-width: auto;
+  padding-bottom: 3rem;
+  font: 500 20px Inter;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact form .input-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box .input-field {
+  position: relative;
+  width: 49%;
+  margin: 0.8rem 0;
+}
+
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: transparent;
+  border-radius: 0.6rem;
+  border: 0.2rem solid var(--main-color);
+}
+
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder {
+  color: var(--text-color);
+}
+
+.contact form .focus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--primary-bg-color);
+  border-radius: 0.6rem;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.contact form .input-box .input-field input:focus ~ .focus,
+.contact form .input-box .input-field input:valid ~ .focus,
+.contact form .textarea-field textarea:focus ~ .focus,
+.contact form .textarea-field textarea:valid ~ .focus {
+  width: 100%;
+}
+
+.contact form .textarea-field {
+  position: relative;
+  margin: 0.8rem 0 2.7rem;
+  display: flex;
+}
+
+.contact form .textarea-field textarea {
+  resize: none;
+}
+
+.contact form .btn-box.btns .btn {
+  cursor: pointer;
+}
